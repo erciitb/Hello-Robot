@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="12/13/23||18:35:13" using="Simscape Multibody Link Version 7.4" from="SolidWorks 29.5.1"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assem1" uid="Assem1" version="118">
+<AssemblyFile name="Assem1.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Part1_robotic_arm-1" uid="Part1_robotic_arm-1" grounded="true" entityUid="Part1_robotic_arm*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.035292313008651342 0.046642535447990532 0.14573493898977605</Translation>
+</Transform>
+</Instance>
+<Instance name="Part3.robotic_arm-1" uid="Part3.robotic_arm-1" entityUid="Part3.robotic_arm*:*Default">
+<Transform>
+<Rotation>-0.57821270553245874 -0.81588606260974605 0 0.81588606260974605 -0.57821270553245874 0 0 0 0.99999999999999978</Rotation>
+<Translation>-0.037752420290585065 0.14240359172940878 0.1482349389897761</Translation>
+</Transform>
+</Instance>
+<Instance name="Part2_robotic_arm-1" uid="Part2_robotic_arm-1" entityUid="Part2_robotic_arm*:*Default">
+<Transform>
+<Rotation>0.99005805514801803 -0.14065933113919107 0 0.14065933113919107 0.99005805514801803 0 0 0 1</Rotation>
+<Translation>-0.13604858023110353 0.28110422237306665 0.16323493898977606</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Parallel name="Parallel1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part1_robotic_arm-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Assem1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part1_robotic_arm-1</Uid>
+</InstancePath>
+<Position>-0.0024601072819336878 0.095761056281418164 0.0050000000000000044</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part3.robotic_arm-1</Uid>
+</InstancePath>
+<Position>0 0 -0.017499999999999988</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part1_robotic_arm-1</Uid>
+</InstancePath>
+<Position>-0.0024601072819336878 0.095761056281418164 0.0050000000000000044</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part3.robotic_arm-1</Uid>
+</InstancePath>
+<Position>0 0 -0.017499999999999988</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part1_robotic_arm-1</Uid>
+</InstancePath>
+<Position>0.060918711908855214 0.040721753236402994 -0.0050000000000000044</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part3.robotic_arm-1</Uid>
+</InstancePath>
+<Position>0 0 -0.0075000000000000067</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part2_robotic_arm-1</Uid>
+</InstancePath>
+<Position>0 0 -0.0075000000000000067</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part3.robotic_arm-1</Uid>
+</InstancePath>
+<Position>0 0 0.0075000000000000067</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part2_robotic_arm-1</Uid>
+</InstancePath>
+<Position>0 0 -0.017499999999999988</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part3.robotic_arm-1</Uid>
+</InstancePath>
+<Position>0.1700000000000001 0 -0.0025000000000000022</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Part1_robotic_arm" uid="Part1_robotic_arm*:*Default" version="178">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Part1_robotic_arm.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.39661342958412249</Mass>
+<CenterOfMass>-0.00086451517983738278 0.015709239345783079 2.7815722665936936e-05</CenterOfMass>
+<Inertia>0.00063418927285927864 0.00099360322387865869 0.00064645889400638946 -8.7536524650012483e-07 1.5469803046720669e-08 1.3677116141309968e-05</Inertia>
+</MassProperties>
+<GeometryFile name="Part1_robotic_arm_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.50196078431372548" g="0.50196078431372548" b="1" a="1"/>
+<Diffuse r="0.50196078431372548" g="0.50196078431372548" b="1" a="1"/>
+<Specular r="0.25098039215686274" g="0.25098039215686274" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Part2_robotic_arm" uid="Part2_robotic_arm*:*Default" version="185">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Part2_robotic_arm.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.097156860461064476</Mass>
+<CenterOfMass>0.068190170872364342 -0.0031903011934042683 0.00039177196937877914</CenterOfMass>
+<Inertia>1.1777217465370211e-05 0.00033094885751355318 0.00033634297234357702 -1.2143416531293213e-07 2.5955647349698268e-06 3.2568999855680605e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Part2_robotic_arm_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.50196078431372548" g="0.50196078431372548" b="1" a="1"/>
+<Diffuse r="0.50196078431372548" g="0.50196078431372548" b="1" a="1"/>
+<Specular r="0.25098039215686274" g="0.25098039215686274" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Part3.robotic_arm" uid="Part3.robotic_arm*:*Default" version="121">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Part3.robotic_arm.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.11469935108995731</Mass>
+<CenterOfMass>0.073759688088398306 -0.0034271800135718951 0.00031757793110104559</CenterOfMass>
+<Inertia>1.6210649731367994e-05 0.00036767527245585278 0.00037871382680881426 -1.2483846559709972e-07 3.0205632833518188e-06 3.6807462196272722e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Part3.robotic_arm_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.50196078431372548" g="0.50196078431372548" b="1" a="1"/>
+<Diffuse r="0.50196078431372548" g="0.50196078431372548" b="1" a="1"/>
+<Specular r="0.25098039215686274" g="0.25098039215686274" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

@@ -1,0 +1,38 @@
+﻿% Inverse kinematics
+
+
+function [theta1d, theta2d] = inverse_kinematics(xd,yd)
+l1=1;
+l2=1;
+theta2d=acos((xd^2+yd^2-l1^2-l2^2)/(2*l1*l2));
+theta1d=atan(yd/xd)-atan((l2*sin(theta2d))/(l1+l2*cos(theta2d)));
+% Set minimum angle in radians
+   min_angle = deg2rad(90); % Set the minimum angle (90 degrees)
+   % Ensure angles stay above the minimum angle
+   theta1_min = min_angle;
+   theta2_min = min_angle;
+   % Impose constraints on the angles
+   theta1d = max(theta1d, theta1_min);
+   theta2d = max(theta2d, theta2_min);
+
+
+—--------------------------------------------------------------------------
+% Forward Kinematics
+
+
+function [xa,ya] = Forward_Kinematics(theta1a,theta2a)
+l1=1;
+l2=1;
+xa=l1*cos(theta1a)-l2*cos(theta1a+theta2a);
+ya=l1*sin(theta1a)-l2*sin(theta1a+theta2a);
+—--------------------------------------------------------------------------
+
+
+% Desired Tracjectory
+
+
+function [xd,yd] = Desired_Trajectory(u)
+xd=1+0.5*sin((2*pi/5)*u+pi/2);
+yd=1+0.5*cos((2*pi/5)*u+pi/2);
+%xd=sin(u);
+%yd=cos(u);

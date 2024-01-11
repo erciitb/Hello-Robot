@@ -51,6 +51,8 @@ Welcome to the "Hello Robot" workshop GitHub repository! 🤖 Unleash the power 
 
 - [Workshop Instagram Post](https://www.instagram.com/p/C1vgfP2xhWU/?igsh=MWlmcHZoZXR2a2ltZw==)
 
+- [Workshop Slide](https://drive.google.com/file/d/1dQz_sPMRREvF9j49NMuj-vUL8hUepjpp/view?usp=sharing)
+
 Feel free to fork this repository and adapt it for your own projects or share your improvements. We hope this resource helps you in your journey to explore the amazing world of robotics! 🚀
 
 For any questions or issues, feel free to [open an issue](https://github.com/erciitb/Hello-Robot/issues) or contribute by submitting a pull request. Happy coding! 🤖✨
